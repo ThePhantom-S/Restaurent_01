@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavors & Fusion - Modern Restaurant</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Flavors & Fusion</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary" href="#reservation" data-bs-toggle="modal" data-bs-target="#reservationModal">Book a Table</a>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="nav-link cart-icon" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h5 class="animate__animated animate__fadeInUp">Welcome to</h5>
+                <h1 class="animate__animated animate__fadeInUp animate__delay-1s">Flavors & Fusion</h1>
+                <p class="animate__animated animate__fadeInUp animate__delay-2s mb-4">Experience the perfect blend of tradition and innovation</p>
+                <a href="#reservation" class="btn btn-primary btn-lg animate__animated animate__fadeInUp animate__delay-3s" data-bs-toggle="modal" data-bs-target="#reservationModal">Book a Table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5 py-lg-7" id="about">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="about-img">
+                        <img src="https://images.unsplash.com/photo-1588123190131-1c3fac394f4b?q=80&w=1530&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Restaurant Interior" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>Founded in 2010, Flavors & Fusion began as a small family restaurant with a big dream: to create a dining experience that celebrates the rich tapestry of global cuisines while honoring local ingredients and traditions.</p>
+                    <p>Today, under the guidance of our award-winning head chef, we continue to push culinary boundaries while maintaining the warm, welcoming atmosphere that has made us a beloved destination for food lovers from around the world.</p>
+                    <div class="row mt-4">
+                        <div class="col-sm-6 mb-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-utensils fa-2x me-3" style="color: var(--secondary);"></i>
+                                <div>
+                                    <h5 class="mb-1">Finest Ingredients</h5>
+                                    <p class="mb-0">Locally sourced, globally inspired</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-award fa-2x me-3" style="color: var(--secondary);"></i>
+                                <div>
+                                    <h5 class="mb-1">Award Winning</h5>
+                                    <p class="mb-0">Recognized for excellence</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-users fa-2x me-3" style="color: var(--secondary);"></i>
+                                <div>
+                                    <h5 class="mb-1">Expert Team</h5>
+                                    <p class="mb-0">Passionate culinary artists</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-leaf fa-2x me-3" style="color: var(--secondary);"></i>
+                                <div>
+                                    <h5 class="mb-1">Sustainable Practices</h5>
+                                    <p class="mb-0">Eco-friendly approach</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="py-5 py-lg-7 bg-light" id="menu">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-3">Our Delicious Menu</h2>
+                <p class="w-75 mx-auto">Explore our carefully crafted menu featuring a blend of traditional favorites and innovative creations, all made with the freshest local ingredients.</p>
+            </div>
+            
+            <div class="filter-buttons text-center">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="starters">Starters</button>
+                <button class="filter-btn" data-filter="mains">Main Course</button>
+                <button class="filter-btn" data-filter="desserts">Desserts</button>
+                <button class="filter-btn" data-filter="drinks">Drinks</button>
+            </div>
+            
+            <div class="row menu-container">
+                <!-- Menu Item 1 -->
+                <div class="col-md-6 col-lg-4 menu-item" data-category="starters">
+                    <div class="menu-img-container">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Crispy Calamari" class="menu-img">
+                        <div class="menu-category">Starter</div>
+                    </div>
+                    <div class="menu-info">
+                        <h4 class="menu-title">Crispy Calamari</h4>
+                        <div class="menu-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>Tender squid lightly dusted in our special seasoned flour, fried to perfection and served with a zesty lemon aioli.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="menu-price">$12.95</span>
+                            <button class="btn btn-sm btn-primary add-to-cart-btn" data-id="1" data-name="Crispy Calamari" data-price="12.95" data-image="/api/placeholder/400/300">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Menu Item 2 -->
+                <div class="col-md-6 col-lg-4 menu-item" data-category="mains">
+                    <div class="menu-img-container">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1381&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Grilled Salmon" class="menu-img">
+                        <div class="menu-category">Main</div>
+                    </div>
+                    <div class="menu-info">
+                        <h4 class="menu-title">Crispy Calamari</h4>
+                        <div class="menu-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>Tender squid lightly dusted in our special seasoned flour, fried to perfection and served with a zesty lemon aioli.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="menu-price">$12.95</span>
+                            <button class="btn btn-sm btn-primary add-to-cart-btn" data-id="1" data-name="Crispy Calamari" data-price="12.95" data-image="/api/placeholder/400/300">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 menu-item" data-category="mains">
+                    <div class="menu-img-container">
+                        <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Grilled Salmon" class="menu-img">
+                        <div class="menu-category">Main</div>
+                    </div>
+                    <div class="menu-info">
+                        <h4 class="menu-title">Crispy Calamari</h4>
+                        <div class="menu-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>Tender squid lightly dusted in our special seasoned flour, fried to perfection and served with a zesty lemon aioli.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="menu-price">$12.95</span>
+                            <button class="btn btn-sm btn-primary add-to-cart-btn" data-id="1" data-name="Crispy Calamari" data-price="12.95" data-image="/api/placeholder/400/300">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Our Story</h2>
+                    <p class="lead">Fine Dining Restaurant was established in 1998 with a simple yet profound mission: to create memorable dining experiences through exceptional food and impeccable service.</p>
+                    <p>Our chef brings over 20 years of experience from Michelin-starred restaurants across Europe and Asia. We source the freshest ingredients from local farmers and artisans, ensuring that every dish tells a story of quality and care.</p>
+                    <a href="#" class="btn btn-outline-dark mt-3">Learn More About Us</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Restaurant Interior" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Guests Say</h2>
+            <div class="row">
+                <!-- Testimonial 1 -->
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p class="mb-3">"The attention to detail in every dish is remarkable. Truly a culinary masterpiece in our city."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="me-3">
+                                <img src="/api/placeholder/50/50" alt="Customer 1" class="rounded-circle">
+                            </div>
+                            <div>
+                                <h6 class="mb-0">Sarah Johnson</h6>
+                                <small class="text-muted">Food Critic</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p class="mb-3">"We celebrated our anniversary here and everything was perfect. The staff went above and beyond."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="me-3">
+                                <img src="/api/placeholder/50/50" alt="Customer 2" class="rounded-circle">
+                            </div>
+                            <div>
+                                <h6 class="mb-0">Michael & Lisa Chen</h6>
+                                <small class="text-muted">Regular Patrons</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <p class="mb-3">"The wine pairing suggestions were exceptional. A memorable dining experience I highly recommend."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="me-3">
+                                <img src="/api/placeholder/50/50" alt="Customer 3" class="rounded-circle">
+                            </div>
+                            <div>
+                                <h6 class="mb-0">Robert Davies</h6>
+                                <small class="text-muted">Wine Enthusiast</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation & Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="mb-4">Contact Us</h2>
+                    <p class="lead">We'd love to hear from you. Contact us for reservations or inquiries.</p>
+                    
+                    <div class="d-flex mb-3">
+                        <i class="fas fa-map-marker-alt me-3 mt-1 text-primary"></i>
+                        <p>123 Gourmet Avenue, Culinary District<br>Foodie City, FC 12345</p>
+                    </div>
+                    
+                    <div class="d-flex mb-3">
+                        <i class="fas fa-phone me-3 mt-1 text-primary"></i>
+                        <p>(555) 123-4567</p>
+                    </div>
+                    
+                    <div class="d-flex mb-3">
+                        <i class="fas fa-envelope me-3 mt-1 text-primary"></i>
+                        <p>info@finediningrestaurant.com</p>
+                    </div>
+                    
+                    <div class="d-flex mb-3">
+                        <i class="fas fa-clock me-3 mt-1 text-primary"></i>
+                        <div>
+                            <p class="mb-0">Monday - Thursday: 5:00 PM - 10:00 PM</p>
+                            <p class="mb-0">Friday - Saturday: 5:00 PM - 11:00 PM</p>
+                            <p>Sunday: 4:00 PM - 9:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <a href="#" class="me-2 text-dark"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="me-2 text-dark"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="me-2 text-dark"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-dark"><i class="fab fa-yelp fa-lg"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Reservation Form -->
+                <div class="col-lg-6" id="reservation">
+                    <div class="bg-white p-4 rounded shadow-sm">
+                        <h3 class="mb-4">Make a Reservation</h3>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="guests" class="form-label">Number of Guests</label>
+                                    <select class="form-select" id="guests" required>
+                                        <option value="">Select...</option>
+                                        <option value="1">1 person</option>
+                                        <option value="2">2 people</option>
+                                        <option value="3">3 people</option>
+                                        <option value="4">4 people</option>
+                                        <option value="5">5 people</option>
+                                        <option value="6">6 people</option>
+                                        <option value="7+">7+ people</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="date" class="form-label">Date</label>
+                                    <input type="date" class="form-control" id="date" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="time" class="form-label">Time</label>
+                                    <input type="time" class="form-control" id="time" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="special-requests" class="form-label">Special Requests</label>
+                                <textarea class="form-control" id="special-requests" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Request Reservation</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Fine Dining Restaurant</h5>
+                    <p class="text-muted">Crafting culinary experiences since 1998.</p>
+                </div>
+                <div class="col-md-2 mb-3 mb-md-0">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white">Home</a></li>
+                        <li><a href="#menu" class="text-white">Menu</a></li>
+                        <li><a href="#about" class="text-white">About</a></li>
+                        <li><a href="#contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <h5>Policies</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-white">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Newsletter</h5>
+                    <p class="text-muted">Subscribe for updates and special offers.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-primary" type="button">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-muted mb-0">&copy; 2025 Fine Dining Restaurant. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small text-muted mb-0">
+                        <a href="#" class="text-white">Privacy</a> | 
+                        <a href="#" class="text-white">Terms</a> | 
+                        <a href="#" class="text-white">FAQ</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+                    
+    </body>
+    </html>
