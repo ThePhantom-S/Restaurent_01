@@ -741,9 +741,9 @@ footer {
 }
 
 .filter-btn {
-    background-color: var(--secondary);
+    background-color: transparent;
     border: 2px solid var(--secondary);
-    color: var(--primary);
+    color: var(--secondary);
     border-radius: 30px;
     padding: 8px 20px;
     margin-right: 10px;
